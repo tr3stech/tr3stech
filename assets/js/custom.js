@@ -41,24 +41,24 @@ jQuery(document).ready(function($) {
     $(this).find('.accordion-toggle i').not($(e.target)).addClass('icon-plus');
   });
 
-  // Create the dropdown base
-  $("<select />").appendTo("nav");
+  // // Create the dropdown base
+  // $("<select />").appendTo("nav");
 
-  // Create default option "Go to..."
-  $("<option />", {
-    "selected": "selected",
-    "value": "",
-    "text": "Go to..."
-  }).appendTo("nav select");
+  // // Create default option "Go to..."
+  // $("<option />", {
+  //   "selected": "selected",
+  //   "value": "",
+  //   "text": "Go to..."
+  // }).appendTo("nav select");
 
-  // Populate dropdown with menu items
-  $("nav a").each(function() {
-    var el = $(this);
-    $("<option />", {
-      "value": el.attr("href"),
-      "text": el.text()
-    }).appendTo("nav select");
-  });
+  // // Populate dropdown with menu items
+  // $("nav a").each(function() {
+  //   var el = $(this);
+  //   $("<option />", {
+  //     "value": el.attr("href"),
+  //     "text": el.text()
+  //   }).appendTo("nav select");
+  // });
 
   //prettyphoto
   $("a[data-pretty^='prettyPhoto']").prettyPhoto();
